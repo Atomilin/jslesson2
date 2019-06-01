@@ -22,7 +22,7 @@ function map(array, fn) {
     var coppyarray = [];
 
     for (var i = 0; i < array.length; i++) {
-        coppyarray[i] = fn(array[i], i, array);
+        coppyarray.push(fn(array[i], i, array));
     }
 
     return coppyarray;
