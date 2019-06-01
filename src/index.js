@@ -184,10 +184,10 @@ function calculator(number=0) {
 }
 
 /* При решении задач, пострайтесь использовать отладчик */
-/*
+
 export {
     isAllTrue,
     isSomeTrue,
     returnBadArguments,
     calculator
-};*/
+};
