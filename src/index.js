@@ -20,7 +20,7 @@ function isAllTrue(array, fn) {
     var x = 0;
     var y = 0;
 
-    if (( array == 0 ) || (Object.prototype.toString.call(array) != '[object Array]')) {
+    if (( array.length == 0 ) || (Object.prototype.toString.call(array) != '[object Array]')) {
         throw new Error('empty array');
     } else if (typeof fn != 'function') {
         throw new Error('fn is not a function');
@@ -61,7 +61,7 @@ function isAllTrue(array, fn) {
 function isSomeTrue(array, fn) {
     var x = 0;
 
-    if (( array == 0 ) || (Object.prototype.toString.call(array) != '[object Array]')) {
+    if (( array.length == 0 ) || (Object.prototype.toString.call(array) != '[object Array]')) {
         throw new Error('empty array');
     } else if (typeof fn != 'function') {
         throw new Error('fn is not a function');
@@ -184,10 +184,10 @@ function calculator(number=0) {
 }
 
 /* При решении задач, пострайтесь использовать отладчик */
-
+/*
 export {
     isAllTrue,
     isSomeTrue,
     returnBadArguments,
     calculator
-};
+};*/
